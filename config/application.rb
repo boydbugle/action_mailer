@@ -17,7 +17,7 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 Dotenv::Railtie.load
 
-GMAIL_USERNAME = ENV['GMAIL_PASSWORD']
+GMAIL_USERNAME = ENV['GMAIL_USERNAME']
 GMAIL_PASSWORD = ENV['GMAIL_PASSWORD']
 module ActionMailer
   class Application < Rails::Application
